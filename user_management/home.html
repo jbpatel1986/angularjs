@@ -1,0 +1,23 @@
+<h1>User Manager</h1>
+<hr />
+<div class="page"></div>	
+
+<a href="#/new" class="btn btn-primary">New User</a>
+<table class="table striped">
+	<thead>
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Age</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="x in users">
+			<td>{{ x.first_name }}</td>
+			<td>{{ x.last_name }}</td>
+			<td>{{ x.age }}</td>
+			<td><a href="#/edit/{{ x.id }}" class="btn">Edit</a></td>
+		</tr>	
+	</tbody>
+</table>

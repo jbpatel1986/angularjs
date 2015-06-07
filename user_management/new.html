@@ -1,0 +1,12 @@
+<form class="edit-user-form" method="POST">
+	<legend>Add User</legend>
+	<label>First Name<label>
+	<input type="text" name="firstname"  ng-model="user.first_name" required/>
+	<label>Last Name<label>
+	<input type="text" name="lastname" ng-model="user.last_name" required/>
+	<label>Age<label>
+	<input type="text" name="age" ng-model="user.age" required/>
+	<hr/>			
+	<input type="submit" class="btn" value="Create" ng-click="addUser()" />
+	<a href="#/" class="btn">Cancel</a>
+</form>
